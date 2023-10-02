@@ -34,4 +34,8 @@ build/
 
 ### System Files
 .DS_Store
+Desktop.ini
+
+### Thumbnail cache files
+._*
 Thumbs.db
