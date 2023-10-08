@@ -8,6 +8,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import java.util.Scanner;
 
 @SpringBootApplication
 public class AccessingDataJpaApplication {
@@ -20,9 +21,14 @@ public class AccessingDataJpaApplication {
 
 	@Bean
 	public CommandLineRunner demo(UserRepository repository) {
+//		System.out.println("Enter key!");
+//		Scanner scanner = new Scanner(System.in);
+//		String line = scanner.nextLine();
+//		System.out.println(line);
+
 		return (args) -> {
 			// save a few customers
-			repository.save(new User("Jack", "Bauer"));
+			repository.save(new User("Jack", "Bauer 2"));
 			repository.save(new User("Chloe", "O'Brian"));
 			repository.save(new User("Kim", "Bauer"));
 			repository.save(new User("David", "Palmer"));
