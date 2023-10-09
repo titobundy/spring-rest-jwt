@@ -1,4 +1,4 @@
-package cl.personal.jpa.models;
+package com.hdiaz.demo.user;
 
 import jakarta.persistence.*;
 

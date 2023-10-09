@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package cl.personal.jpa;
+package com.hdiaz.demo;
 
-import cl.personal.jpa.repository.UserRepository;
+import com.hdiaz.demo.repository.UserRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -33,7 +33,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @SpringBootTest
 @AutoConfigureMockMvc
-public class AccessingDataRestApplicationTests {
+public class SpringDemoApplicationTests {
 
 	@Autowired
 	private MockMvc mockMvc;

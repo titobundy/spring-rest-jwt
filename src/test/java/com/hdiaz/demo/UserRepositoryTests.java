@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package cl.personal.jpa;
+package com.hdiaz.demo;
 
-import cl.personal.jpa.models.User;
-import cl.personal.jpa.repository.UserRepository;
+import com.hdiaz.demo.user.User;
+import com.hdiaz.demo.repository.UserRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;

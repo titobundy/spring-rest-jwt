@@ -1,22 +1,21 @@
-package cl.personal.jpa;
+package com.hdiaz.demo;
 
-import cl.personal.jpa.models.User;
-import cl.personal.jpa.repository.UserRepository;
+import com.hdiaz.demo.user.User;
+import com.hdiaz.demo.repository.UserRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-import java.util.Scanner;
 
 @SpringBootApplication
-public class AccessingDataJpaApplication {
+public class SpringDemoApplication {
 
-	private static final Logger log = LoggerFactory.getLogger(AccessingDataJpaApplication.class);
+	private static final Logger log = LoggerFactory.getLogger(SpringDemoApplication.class);
 
 	public static void main(String[] args) {
-		SpringApplication.run(AccessingDataJpaApplication.class);
+		SpringApplication.run(SpringDemoApplication.class);
 	}
 
 	@Bean
