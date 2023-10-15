@@ -1,4 +1,4 @@
-package com.hdiaz.demo.service;
+package com.hdiaz.demo.jwt;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

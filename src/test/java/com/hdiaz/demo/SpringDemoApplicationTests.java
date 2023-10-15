@@ -16,7 +16,7 @@
 
 package com.hdiaz.demo;
 
-import com.hdiaz.demo.repository.UserRepository;
+import com.hdiaz.demo.user.UserRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

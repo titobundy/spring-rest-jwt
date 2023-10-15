@@ -17,7 +17,7 @@
 package com.hdiaz.demo;
 
 import com.hdiaz.demo.user.User;
-import com.hdiaz.demo.repository.UserRepository;
+import com.hdiaz.demo.user.UserRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
@@ -37,11 +37,16 @@ public class UserRepositoryTests {
 
 	@Test
 	public void testFindByLastName() {
-		User user = new User("first", "last");
+		User user = User.builder()
+				.firstname("firstname")
+				.lastname("lastname")
+				.password("password")
+				.build();
+
 		entityManager.persist(user);
 
-		List<User> findByLastName = users.findByLastName(user.getLastName());
+		List<User> findByLastName = users.findByLastname(user.getLastname());
 
-		assertThat(findByLastName).extracting(User::getLastName).containsOnly(user.getLastName());
+		assertThat(findByLastName).extracting(User::getLastname).containsOnly(user.getLastname());
 	}
 }
